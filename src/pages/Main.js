@@ -34,7 +34,7 @@ export default function Main({ match }) {
   }, [match.params.id]);
 
   useEffect(() => {
-    const socket = io(`${api}`, {
+    const socket = io('https://tindev--backend.herokuapp.com/', {
       //parametros adicionais
       query: { user: match.params.id }
     });
